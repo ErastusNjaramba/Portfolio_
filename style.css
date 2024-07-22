@@ -52,16 +52,43 @@ html{
     transform: translate(-50%, -50%);
     text-align: center;
 }
-
+ /* name animation */
+ .hero-content h1{
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer
+  }
+  .hero-content h1 span{
+    transition: .5s linear
+  }
+  .hero-content h1:hover span:nth-child(1){
+    margin-right: 5px
+  }
+  .hero-content h1:hover span:nth-child(1):after{
+    content: "/";
+  }
+  .hero-content h1:hover span:nth-child(2){
+    margin-left: 30px
+  }
+  .hero-content h1:hover span{
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff, 
+                 0 0 40px #fff;
+  }
 /* About me */
 
-.aboutme {
+.aboutme1 {
     background-color: #173B45;
     width: 80%;
     height: 45vh;
     overflow: hidden;
     position: relative;
     margin-left: 10%;
+    
 }
 
 .about{
@@ -70,12 +97,10 @@ html{
      margin: auto; 
      font-size: large; 
      width: 70%;
+     margin-top: 3%;
 }
 
-.about h1{
-    text-align: center; 
-    color: #FF8225;
-}
+
 
 .greeting{
     text-align: center; 
@@ -157,4 +182,29 @@ html{
     width: 25%;
     padding: 15px;
     border-radius: 15px;
+}
+
+/* footer  */
+footer {
+    margin: auto;
+    width: 80%;
+    background-color: #173B45;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+    padding: 10px;
+
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
